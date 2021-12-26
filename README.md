@@ -3,7 +3,7 @@
 Deploy a simple container running Apache.
 
 ```sh
-kubectl apply -f
+kubectl apply -f https://raw.githubusercontent.com/sebw/kubernetes-sample-app/master/sample.yml
 ```
 
 ```sh
