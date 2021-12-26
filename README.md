@@ -22,5 +22,11 @@ replicaset.apps/sampleapp-deployment-7f99699c69   1         1         1       20
 ```
 
 ```sh
+# kubectl get ingress -n sampleapp
+NAME                CLASS    HOSTS                   ADDRESS       PORTS   AGE
+sampleapp-ingress   <none>   sampleapp.example.org   10.20.10.82   80      13m
+```
+
+```sh
 curl -H "Host: sampleapp.example.org" http://your-kubernetes-node-ip
 ```
