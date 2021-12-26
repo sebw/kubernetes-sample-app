@@ -1,6 +1,6 @@
 # Sample app for Kubernetes
 
-Deploy a simple container running Apache.
+Deploy a simple container running Apache, using the image `quay.io/swains/httpd` based on `ubi8`.
 
 ```sh
 kubectl apply -f https://raw.githubusercontent.com/sebw/kubernetes-sample-app/master/sample.yml
