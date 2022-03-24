@@ -1,6 +1,10 @@
 # Sample app for Kubernetes
 
-Deploy a simple container running Apache, using the image `quay.io/swains/httpd` based on `ubi8`.
+Deploy a simple container running Apache, using the image `quay.io/swains/httpd-8080:latest` based on `ubi8`.
+
+Image has been built with Buildah. See script included in this repo.
+
+Networking with Traefik. Adjust your ingress accordingly.
 
 ```sh
 kubectl apply -f https://raw.githubusercontent.com/sebw/kubernetes-sample-app/master/sample.yml
