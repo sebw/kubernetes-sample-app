@@ -8,5 +8,5 @@ buildah config --cmd "/usr/sbin/httpd -D FOREGROUND" ubi-working-container
 buildah config --port 80 ubi-working-container
 buildah commit ubi-working-container httpd
 podman login quay.io
-podman tag localhost/httpd:latest quay.io/swains/httpd-8080:latest
-podman push quay.io/swains/httpd-8080:latest
+podman tag localhost/httpd:latest quay.io/swains/httpd:latest
+podman push quay.io/swains/httpd:latest
