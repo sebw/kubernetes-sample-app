@@ -6,6 +6,8 @@ Image has been built with Buildah. See script included in this repo.
 
 Networking with Traefik. Adjust your ingress accordingly.
 
+## Kubernetes
+
 ```sh
 kubectl apply -f https://raw.githubusercontent.com/sebw/kubernetes-sample-app/master/sample.yml
 ```
@@ -33,4 +35,11 @@ sampleapp-ingress   <none>   sampleapp.example.org   10.20.10.82   80      13m
 
 ```sh
 curl -H "Host: sampleapp.example.org" http://your-kubernetes-node-ip
+```
+
+## If you don't have a Kubernetes cluster
+
+```bash
+podman run -p 8888:80 quay.io/swains/httpd
+curl localhost:8888
 ```
