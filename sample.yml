@@ -81,7 +81,7 @@ metadata:
     kubernetes.io/ingress.class: traefik
 spec:
   rules:
-  - host: sampleapp.example.org
+  - host: sample.app.labo.ovh
     http:
       paths:
         - path: /
